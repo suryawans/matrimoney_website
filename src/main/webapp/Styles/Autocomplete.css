@@ -1,0 +1,85 @@
+.ui-autocomplete {
+    height: 150px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    width: 100%;
+    max-width: 360px;
+    padding: 5px 0 25px;
+    margin: 2px 0 0;
+    list-style: none;
+    font-size: 13px;
+    text-align: left;
+    border: 1px solid #cccccc;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    background-clip: padding-box;
+    background: #eeeeee;
+    position: relative !important;
+}
+
+.ui-autocomplete:after {
+    position: sticky;
+    bottom: 0;
+    margin-left: 230px;
+    margin-top: 125px;
+    background: #ffffff;
+    content: '';
+    /* Search By IKF*/
+    width: 100%;
+    max-width: 360px;
+    height: 25px;
+    z-index: 9;
+    color: #000000 !important;
+}
+
+.ui-autocomplete li {
+    background: #ffffff !important;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    /*padding: 15px 10px 15px 30px !important;*/
+    outline: 0 !important;
+}
+
+.ui-autocomplete li:after {
+    position: absolute;
+    content: '';
+    left: 8px;
+    top: 15px;
+    width: 15px;
+    height: 20px;
+    background: url(background.jpg);
+}
+
+.ui-autocomplete li:hover {
+    background: #dadada !important;
+}
+
+/*pavan css*/
+
+.ui-menu .ui-menu-item a.ui-state-hover {
+    border-color: transparent !important;
+}
+
+.ui-menu .ui-menu-item a {
+    padding: 15px 10px 15px 30px !important;
+    z-index: 9;
+    position: relative;
+}
+
+.ui-menu li.ui-menu-item {
+    cursor: pointer
+}
+
+.ui-menu li.ui-menu-item a.ui-corner-all:hover {
+    background: transparent !important;
+    color: #000000 !important;
+    font-weight: normal !important;
+}

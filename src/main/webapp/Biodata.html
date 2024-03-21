@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Upload PDF File</title>
+
+<style type="text/css">
+body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 600px;
+        margin: 50px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+        text-align: center;
+    }
+    label {
+        font-weight: bold;
+    }
+    input[type="file"] {
+        margin-bottom: 10px;
+    }
+    input[type="submit"] {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload PDF</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+<center>
+   <!DOCTYPE html>
+<html>
+<head>
+    <title>Upload PDF</title>
+</head>
+<body>
+    <h2>Upload PDF</h2>
+    <form id="uploadForm" action="image" method="post" enctype="multipart/form-data">
+        <label for="pdfFile">Select a PDF file:</label><br>
+        <input type="file" id="pdfFile" name="pdfFile" accept="application/pdf"><br><br>
+        <input type="submit" value="Upload">
+    </form>
+</center>
+    <script>
+        $(document).ready(function() {
+            $('#uploadForm').submit(function(event) {
+                event.preventDefault(); // Prevent the default form submission
+                
+                // Perform AJAX request to upload the file
+                $.ajax({
+                    url: $(this).attr('action'),
+                    type: $(this).attr('method'),
+                    data: new FormData(this),
+                    processData: false,
+                    contentType: false,
+                    success: function(response) {
+                        // Redirect to the login page after successful upload
+                        window.location.href = 'login.jsp';
+                    },
+                    error: function(xhr, status, error) {
+                        // Handle errors if any
+                        console.error(error);
+                    }
+                });
+            });
+        });
+    </script>
+    
+</body>
+</html>
+   
+</body>
+</html>
+
+</html>
