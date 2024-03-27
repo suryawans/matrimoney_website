@@ -15,7 +15,7 @@
 
 <body>
   <nav class="navbar">
-    <div class="container">
+    <div class="container1">
       <div class="logo"><img src="logo1.png" alt="Matrimony Logo"> </div>
      
       <div class="toggle" onclick="toggleMenu()">&#9776;</div>
@@ -40,7 +40,7 @@
 
             <div class="row">
                 <div class="column" style="background-color:hsl(46, 37%, 25%);">
-                    <h2>Near More Hospital Chinchwadgaon,Pune,Maharashtra</h2>
+                    <h2>Near More Hospital Chinchwadgaon<br>Pune,Maharashtra</h2>
                     <a href="tel:9890233267"><i class="fa-solid fa-phone">9890233267</i></a>
                     <br>
                     <a href="tel:9420729111"><i class="fa-solid fa-phone">9420729111</i></a>
@@ -83,7 +83,7 @@
                  <a href="contactus.html">Contact</a>
                   
             </p>
-            <p class="footer-company-name">Copyright <strong> &copy; 2024chinchkar developer</strong> All rights reserved</p>
+            <p class="footer-company-name">Copyright <strong> &copy; 2024 Vivahvrundh developer</strong> All rights reserved</p>
         </div>
         <div class="footer-center">
             <div>

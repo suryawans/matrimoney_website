@@ -6,7 +6,50 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"></head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script>
+        function validateForm() {
+            var fullname = document.getElementById("fullname").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            var gender = document.getElementById("gender").value;
+            var mobile_no = document.getElementById("mobile_no").value;
+            var country = document.getElementById("country").value;
+            var cast = document.getElementById("cast").value;
+            var occupation = document.getElementById("occupation").value;
+            var education = document.getElementById("education").value;
+            var height = document.getElementById("height").value;
+            var about = document.getElementById("about").value;
+
+            // Regular expressions for email, password, and mobile number
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            var passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+            var mobileRegex = /^[0-9]{10}$/;
+
+            if (fullname == "" || email == "" || password == "" || gender == "" || mobile_no == "" || country == "" || cast == "" || occupation == "" || education == "" || height == "" || about == "") {
+                alert("All fields must be filled out");
+                return false;
+            }
+
+            if (!email.match(emailRegex)) {
+                alert("Please enter a valid email address");
+                return false;
+            }
+
+            if (!password.match(passwordRegex)) {
+                alert("Password must be at least 8 characters long and contain at least one number, one lowercase and one uppercase letter");
+                return false;
+            }
+
+            if (!mobile_no.match(mobileRegex)) {
+                alert("Please enter a valid 10-digit mobile number");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+    </head>
 
 <body>
  
@@ -15,7 +58,7 @@
   
      
     <div class="img">
-        <center>
+       <center>
             <div class="container">
                 <h2>Register Here</h2>
                 <form action="RegisterServlet" method="post">
@@ -59,18 +102,17 @@
                    
 
                     <input type="submit" value="register" name="Register">
-                    <h3>if already registered <a href="login.jsp"> Login </a>  </h2>
+                 <center>   <h3>if already registered <a href="login.jsp"> Login </a>  </h2></center>
                  
                
                 </form>
                 
-                
         </center>
-      if   <% String error = request.getParameter("error");
+         <% String error = request.getParameter("error");
            if (error != null && error.equals("1")) { %>
             <p style="color: red;">Registration failed. Please try again.</p>
         <% } %>
-        else
+       
         <%-- Display error message if Register Successful --%>
         <% String rs = request.getParameter("registration");
             if (rs != null && rs.equals("success")) { %>
@@ -79,9 +121,10 @@
         
         
     </div>
-
-
+    
+</div>
 
 </body>
 
 </html>
+

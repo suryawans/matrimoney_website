@@ -36,38 +36,51 @@ public class LoginServlets extends HttpServlet {
 	        
 
 	        try {
-	            // Load the MySQL JDBC driver
-	            Class.forName("com.mysql.cj.jdbc.Driver");
+	           
+	        	Class.forName("com.mysql.cj.jdbc.Driver");
 
 	            // Connect to the database
-	            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/matrimoney", "root",
-	                    "tiger");
-	            String email = request.getParameter("email");
-		        String password = request.getParameter("password");
+	            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/matrimoney", "root", "tiger");
 
-	            PreparedStatement ps = con.prepareStatement("select * from register where email=? and password=?");
+	            String email = request.getParameter("email");
+	            String password = request.getParameter("password");
+
+	            // Prepare a SQL statement with parameterized query
+	            PreparedStatement ps = con.prepareStatement("SELECT * FROM register WHERE email=? AND password=?");
 	            ps.setString(1, email);
 	            ps.setString(2, password);
 
+	            // Execute the query
 	            ResultSet rs = ps.executeQuery();
+
 	            if (rs.next()) {
 	                // Login successful
-	                out.println("<h2>Login successful</h2>");
-	                // You can redirect to another page here
+	                HttpSession session = request.getSession();
+	                session.setAttribute("email", email); // Store user's email in session for further authentication
+
+	                // Redirect to the home page
+	                response.sendRedirect("index1.jsp");
 	            } else {
 	                // Login failed
-	                out.println("<h2>Login failed. Invalid email or password.</h2>");
-	                // You can redirect back to the login page here
+	                response.sendRedirect("login.jsp?error=1"); // Redirect back to login page with an error parameter
 	            }
-	        } catch (Exception e) {
-	            out.println("Error: " + e);
-	        }
-	    }
+
+	            // Close resources
+	            rs.close();
+	            ps.close();
+	            con.close();
+	        } catch (Exception ex) {
+	            // Log the exception
+	            ex.printStackTrace();
+	            out.println(ex.toString());
+	            // Redirect to an error page
+	            response.sendRedirect("error.jsp");
 		  
 
 }
 
     
-
+	}
+}
 
 

@@ -20,7 +20,7 @@
       <div class="logo"><img src="logo1.png" alt="Matrimony Logo"> </div>
      
       <div class="toggle" onclick="toggleMenu()">&#9776;</div>
-      <ul class="nav-links" id="nav-links">
+      <ul class="nav-links" id="nav-links" style="font-size:16px">
         <li><a href="index1.jsp">Home</a></li>
         <li><a href="Aboutus.jsp">About us</a></li>
         <li><a href="Services.jsp">Services</a></li>
@@ -31,19 +31,22 @@
   </nav>
     
     
+      
+  <div class="container1">
+    <ul class="list-group">
+        <li class="list-group-item border border-primary bg-info text-white">With the noble intention of fulfilling the true resolution of social work and actively contributing to the welfare of the general public, the Chinchkar Bride-Groom Indicator Center organized a meeting for all community.</li>
+        <li class="list-group-item border border-primary bg-info text-white">Until today, approximately 257 marriages have been successfully arranged. There is a place where aspirations, prosperity, and the golden bonds of relationships are to be established. Searching for ideal relationships is made easy, joyful, and special with the establishment of the "Maratha Bride-Groom Indicator Site."</li>
+        <li class="list-group-item border border-primary bg-info text-white">Our Vision: To establish a special bond in our lives with a partner. We aim to establish a suitable and spiritual relationship for the happiness and tranquility of brides and grooms, instilling confidence.</li>
+        <li class="list-group-item border border-primary bg-info text-white">Details of Our Services: Providing Suitable Indicators: We always provide safe and suitable indicators for brides and grooms.</li>
+        <li class="list-group-item border border-primary bg-info text-white">Unique Customization: We provide a customized list of brides and grooms based on your personal preferences.</li>
+        <li class="list-group-item border border-primary bg-info text-white">Privacy Security: Your privacy is our priority, and we ensure the security of your privacy and confidentiality.</li>
+        <li class="list-group-item border border-primary bg-info text-white">Contact: For any questions or assistance, please <a href="#">contact us</a>.</li>
+        <li class="list-group-item border border-primary bg-info text-white">Thank you for being with us!</li>
+    </ul>
+</div>
+  
+    
    
-    <div class="container1">
- <ul  list-style="bullet" padding-left:"30px" padding-right:"39px">
-            <li color:"red">With the noble intention of fulfilling the true resolution of social work and actively contributing to the welfare of the general public, the Chinchkar Bride-Groom Indicator Center organized a meeting for all community.</li>
-            <li>Until today, approximately 257 marriages have been successfully arranged. There is a place where aspirations, prosperity, and the golden bonds of relationships are to be established. Searching for ideal relationships is made easy, joyful, and special with the establishment of the "Maratha Bride-Groom Indicator Site."</li>
-            <li>Our Vision: To establish a special bond in our lives with a partner. We aim to establish a suitable and spiritual relationship for the happiness and tranquility of brides and grooms, instilling confidence.</li>
-            <li>Details of Our Services: Providing Suitable Indicators: We always provide safe and suitable indicators for brides and grooms.</li>
-            <li>Unique Customization: We provide a customized list of brides and grooms based on your personal preferences.</li>
-            <li>Privacy Security: Your privacy is our priority, and we ensure the security of your privacy and confidentiality.</li>
-            <li>Contact: For any questions or assistance, please <a href="#">contact us</a>.</li>
-            <li>Thank you for being with us!</li>
-        </ul>
-        </div>
     
    
    
@@ -58,7 +61,7 @@
                  <a href="contactus.html">Contact</a>
                   
             </p>
-            <p class="footer-company-name">Copyright <strong> &copy; 2024chinchkar developer</strong> All rights reserved</p>
+            <p class="footer-company-name">Copyright <strong> &copy; 2024 Vivahvrundh developer</strong> All rights reserved</p>
         </div>
         <div class="footer-center">
             <div>

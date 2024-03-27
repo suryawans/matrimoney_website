@@ -6,10 +6,9 @@
         services
     </title>
     <link rel="stylesheet" href="services.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
   
@@ -37,7 +36,7 @@
     <div class="timeline">
         <div class="container ">
             <div class="text-box">
-                <p>Welcome to chinchkar, Pune's growing Marathi vadhu var suchak.
+                <p>Welcome to vivahvrundh, Pune's growing Marathi vadhu var suchak.
                     chinchkar is a Marathi matrimony. We are committed to provide you the best Marathi matrimonial
                     service.</p>
             </div>
@@ -53,7 +52,7 @@
     <div class="timeline">
         <div class="container ">
             <div class="text-box">
-                <p>Are you looking for your perfect life partner?chinchkar is here to help by simply digitizing the
+                <p>Are you looking for your perfect life partner?vivahvrundh is here to help by simply digitizing the
                     traditional method of finding your mate. Referred as an online Vadhu Var Suchak, we take deep
                     interest in presenting to you profiles of suitable matches according to your preferences.</p>
             </div>
@@ -78,7 +77,7 @@
     <div class="timeline">
         <div class="container">
             <div class="text-box">
-                <p> Why chinchkar ?</p>
+                <p> Why Vivahvrundh ?</p>
             </div>
         </div>
     </div>
@@ -125,7 +124,7 @@
 </center>
 <footer class="footer-distributed">
         <div class="footer-left">
-            <p>chinchkar<span>developer</span></p>
+            <p>Vivahvrundh<span>developer</span></p>
             
             <p class="footer-links">
                 <a href="index.html">Home</a>
@@ -134,7 +133,7 @@
                  <a href="contactus.html">Contact</a>
                   
             </p>
-            <p class="footer-company-name">Copyright <strong> &copy; 2024chinchkar developer</strong> All rights reserved</p>
+            <p class="footer-company-name">Copyright <strong> &copy; 2024 Vivahvrundh developer</strong> All rights reserved</p>
         </div>
         <div class="footer-center">
             <div>
@@ -157,7 +156,7 @@
         </div>
         <div class="footer-right">
             <p class="footer-company-About">
-                <span>Chinchkar Bride-Groom Indicator Center</span>
+                <span>Vivahvrundh  Bride-Groom Indicator Center</span>
 
             </p>
             <div class="footer-icons">

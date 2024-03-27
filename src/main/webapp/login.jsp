@@ -36,7 +36,7 @@
                                 </div>
                                 <br>
                                 <button type="submit" class="btn btn-primary btn-block">Login</button>
-                                <h3>if you are new here<a href="register.jsp">Register</a></h3>
+                                
                             </form>
                         </div>
                        

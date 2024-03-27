@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
 
 
 </head>
@@ -20,7 +20,7 @@
       <div class="logo"><img src="logo1.png" alt="Matrimony Logo"> </div>
      
       <div class="toggle" onclick="toggleMenu()">&#9776;</div>
-      <ul class="nav-links" id="nav-links">
+      <ul class="nav-links" id="nav-links" style="font-size:16px">
         <li><a href="index1.jsp">Home</a></li>
         <li><a href="Aboutus.jsp">About us</a></li>
         <li><a href="Services.jsp">Services</a></li>
@@ -51,7 +51,7 @@
                  <a href="contactus.jsp">Contact</a>
                   
             </p>
-            <p class="footer-company-name">Copyright <strong> &copy; 2024vivahvrundh developer</strong> All rights reserved</p>
+            <p class="footer-company-name">Copyright <strong> &copy; 2024 Vivahvrundh developer</strong> All rights reserved</p>
         </div>
         <div class="footer-center">
             <div>
